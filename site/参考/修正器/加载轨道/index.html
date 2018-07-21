@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="抓根">
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>加载轨道 - OVITO用户手册中文翻译</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u52a0\u8f7d\u8f68\u9053";
+    var mkdocs_page_input_path = "\u53c2\u8003\\\u4fee\u6b63\u5668\\\u52a0\u8f7d\u8f68\u9053.md";
+    var mkdocs_page_url = "/\u53c2\u8003/\u4fee\u6b63\u5668/\u52a0\u8f7d\u8f68\u9053/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> OVITO用户手册中文翻译</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">参考</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../%E5%8A%A8%E7%94%BB%E8%AE%BE%E7%BD%AE%E5%AF%B9%E8%AF%9D%E6%A1%86/">动画设置对话框</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../%E7%B2%92%E5%AD%90%E6%A3%80%E6%B5%8B%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">粒子检测实用工具</a>
+                </li>
+                <li class=" current">
+                    
+    <span class="caption-text">修正器</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../Python%E8%84%9A%E6%9C%AC%E4%BF%AE%E6%94%B9%E5%99%A8/">Python脚本修改器</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E4%B8%AD%E5%BF%83%E5%AF%B9%E7%A7%B0%E5%8F%82%E6%95%B0/">中心对称参数</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E4%BB%BF%E5%B0%84%E5%8F%98%E6%8D%A2/">仿射变换</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E4%BD%8D%E7%A7%BB%E7%9F%A2%E9%87%8F/">位移矢量</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E4%BD%8D%E9%94%99%EF%BC%88DXA%EF%BC%89%E5%88%86%E6%9E%90/">位错（DXA）分析</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E4%BF%AE%E6%AD%A3%E5%99%A8/">修正器</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E5%82%A8%E5%AD%98%E4%B8%8E%E5%87%8F%E5%B0%91/">储存与减少</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E5%86%BB%E7%BB%93%E6%80%A7%E8%B4%A8/">冻结性质</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E5%88%86%E9%85%8D%E9%A2%9C%E8%89%B2/">分配颜色</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E5%88%87%E7%89%87/">切片</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E5%88%9B%E5%BB%BA%E5%8C%96%E5%AD%A6%E9%94%AE/">创建化学键</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E5%88%9B%E5%BB%BA%E7%AD%89%E5%80%BC%E9%9D%A2/">创建等值面</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E5%88%A0%E9%99%A4%E6%89%80%E9%80%89%E7%B2%92%E5%AD%90/">删除所选粒子</a>
+                </li>
+                <li class="toctree-l3 current">
+                    
+    <a class="current" href="./">加载轨道</a>
+    <ul class="subnav">
+            
+    </ul>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E5%8F%8D%E9%80%89/">反选</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E5%9C%A8%E5%91%A8%E6%9C%9F%E6%80%A7%E8%BE%B9%E7%95%8C%E7%8E%AF%E7%BB%95/">在周期性边界环绕</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E5%9D%90%E6%A0%87%E5%88%86%E6%9E%90/">坐标分析</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E5%9D%90%E6%A0%87%E5%A4%9A%E9%9D%A2%E4%BD%93/">坐标多面体</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E5%A4%9A%E9%9D%A2%E4%BD%93%E6%A8%A1%E6%9D%BF%E5%8C%B9%E9%85%8D/">多面体模板匹配</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E5%B1%95%E5%BC%80%E9%80%89%E6%8B%A9/">展开选择</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E5%BC%B9%E6%80%A7%E5%BA%94%E5%8F%98%E8%AE%A1%E7%AE%97/">弹性应变计算</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E6%89%8B%E5%8A%A8%E9%80%89%E6%8B%A9/">手动选择</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E6%95%A3%E7%82%B9%E5%9B%BE/">散点图</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E6%98%BE%E7%A4%BA%E5%91%A8%E6%9C%9F%E6%80%A7%E5%9B%BE%E5%83%8F/">显示周期性图像</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E6%9E%84%E9%80%A0%E7%BD%91%E6%A0%BC%E8%A1%A8%E9%9D%A2/">构造网格表面</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E6%B3%B0%E6%A3%AE%E5%A4%9A%E8%BE%B9%E5%BD%A2%E6%8B%93%E6%89%91%E5%88%86%E6%9E%90/">泰森多边形拓扑分析</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E6%B3%B0%E6%A3%AE%E5%A4%9A%E8%BE%B9%E5%BD%A2%E6%B3%95%E5%88%86%E6%9E%90/">泰森多边形法分析</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E6%B8%85%E7%A9%BA%E9%80%89%E9%A1%B9/">清空选项</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E7%8E%AF%E5%A2%83%E5%85%89%E5%B1%8F%E8%94%BD/">环境光屏蔽</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E7%9B%B4%E6%96%B9%E5%9B%BE/">直方图</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E7%BB%B4%E6%A0%BC%E7%BA%B3-%E8%B5%9B%E5%85%B9%E7%BC%BA%E9%99%B7%E5%88%86%E6%9E%90/">维格纳 赛兹缺陷分析</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E8%81%94%E7%BB%93%E7%B2%92%E5%AD%90%E8%AE%BE%E7%BD%AE/">联结粒子设置</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E8%81%9A%E7%B1%BB%E5%88%86%E6%9E%90/">聚类分析</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E8%A1%A8%E8%BE%BE%E5%BC%8F%E9%80%89%E6%8B%A9/">表达式选择</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7/">计算属性</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E8%AE%A1%E7%AE%97%E9%94%AE%E9%95%BF/">计算键长</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E8%AF%86%E5%88%AB%E9%92%BB%E7%9F%B3%E7%BB%93%E6%9E%84/">识别钻石结构</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E9%80%89%E6%8B%A9%E7%B2%92%E5%AD%90%E7%A7%8D%E7%B1%BB/">选择粒子种类</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E9%80%9A%E7%94%A8%E4%B8%B4%E8%BF%91%E5%88%86%E6%9E%90/">通用临近分析</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E9%94%AE%E8%A7%92%E5%88%86%E6%9E%90/">键角分析</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../%E9%A2%9C%E8%89%B2%E7%BC%96%E7%A0%81/">颜色编码</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">显示对象</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1/%E5%90%91%E9%87%8F%E6%98%BE%E7%A4%BA/">向量显示</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1/%E7%B2%92%E5%AD%90%E6%98%BE%E7%A4%BA/">粒子显示</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1/%E8%A1%A8%E9%9D%A2%E7%BD%91%E6%A0%BC%E6%98%BE%E7%A4%BA/">表面网格显示</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1/%E9%94%AE%E6%98%BE%E7%A4%BA/">键显示</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">渲染</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../%E6%B8%B2%E6%9F%93/OpenGL%E6%B8%B2%E6%9F%93%E5%99%A8/">OpenGL渲染器</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../%E6%B8%B2%E6%9F%93/POV-Ray%E6%B8%B2%E6%9F%93%E5%99%A8/">POV Ray渲染器</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../%E6%B8%B2%E6%9F%93/Tachyon%E6%B8%B2%E6%9F%93%E5%99%A8/">Tachyon渲染器</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../%E6%B8%B2%E6%9F%93/%E6%B8%B2%E6%9F%93%E8%AE%BE%E7%BD%AE/">渲染设置</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">视角</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../%E8%A7%86%E8%A7%92/%E8%A7%86%E8%A7%92%E5%8F%A0%E5%8A%A0/">视角叠加</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../%E8%A7%86%E8%A7%92/%E8%B0%83%E6%95%B4%E8%A7%86%E8%A7%92%E5%AF%B9%E8%AF%9D%E6%A1%86/">调整视角对话框</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">开发者信息</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../%E5%BC%80%E5%8F%91%E8%80%85%E4%BF%A1%E6%81%AF/%E5%9C%A8Linux%E4%B8%8A%E6%9E%84%E5%BB%BAOVITO/">在Linux上构建OVITO</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../%E5%BC%80%E5%8F%91%E8%80%85%E4%BF%A1%E6%81%AF/%E5%9C%A8MacOS%E4%B8%8A%E6%9E%84%E5%BB%BAOVITO/">在MacOS上构建OVITO</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../%E5%BC%80%E5%8F%91%E8%80%85%E4%BF%A1%E6%81%AF/%E5%9C%A8Windows%E4%B8%8A%E6%9E%84%E5%BB%BAOVITO/">在Windows上构建OVITO</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">操作指南</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/%E5%8D%8A%E9%80%8F%E6%98%8E%E7%B2%92%E5%AD%90/">半透明粒子</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/%E5%8F%AF%E8%A7%86%E5%8C%96%E7%B2%92%E5%AD%90%E8%BD%A8%E8%BF%B9/">可视化粒子轨迹</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/%E6%A0%87%E8%AE%B0%E5%8E%9F%E5%AD%90%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96%E6%93%8D%E4%BD%9C/">标记原子的可视化操作</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/%E8%A7%86%E8%A7%92%E4%B8%8A%E6%B7%BB%E5%8A%A0%E7%BC%A9%E6%94%BE%E6%A0%8F/">视角上添加缩放栏</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/%E9%9D%9E%E7%90%83%E5%BD%A2%E7%B2%92%E5%AD%90/">非球形粒子</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">用法</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../%E7%94%A8%E6%B3%95/Python%E8%84%9A%E6%9C%AC/">Python脚本</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../%E7%94%A8%E6%B3%95/%E4%BF%AE%E6%AD%A3%E9%80%9A%E9%81%93/">修正通道</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../%E7%94%A8%E6%B3%95/%E5%8A%A8%E7%94%BB%E7%B3%BB%E7%BB%9F/">动画系统</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../%E7%94%A8%E6%B3%95/%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE/">导入数据</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../%E7%94%A8%E6%B3%95/%E5%AF%BC%E5%87%BA%E6%95%B0%E6%8D%AE/">导出数据</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../%E7%94%A8%E6%B3%95/%E6%9D%82%E9%A1%B9/">杂项</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../%E7%94%A8%E6%B3%95/%E6%B8%B2%E6%9F%93%E5%9B%BE%E5%83%8F%E5%8F%8A%E8%A7%86%E9%A2%91/">渲染图像及视频</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../%E7%94%A8%E6%B3%95/%E7%B2%92%E5%AD%90%E5%B1%9E%E6%80%A7/">粒子属性</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../%E7%94%A8%E6%B3%95/%E8%A7%86%E8%A7%92/">视角</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">OVITO用户手册中文翻译</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>参考 &raquo;</li>
+        
+      
+        
+          <li>修正器 &raquo;</li>
+        
+      
+    
+    <li>加载轨道</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../%E5%8F%8D%E9%80%89/" class="btn btn-neutral float-right" title="反选">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../%E5%88%A0%E9%99%A4%E6%89%80%E9%80%89%E7%B2%92%E5%AD%90/" class="btn btn-neutral" title="删除所选粒子"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../%E5%88%A0%E9%99%A4%E6%89%80%E9%80%89%E7%B2%92%E5%AD%90/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../%E5%8F%8D%E9%80%89/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/require.js"></script>
+      <script src="../../../search/search.js"></script>
+
+</body>
+</html>

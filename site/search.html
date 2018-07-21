@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="抓根">
+  <link rel="shortcut icon" href="./img/favicon.ico">
+  <title>OVITO用户手册中文翻译</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="./css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="./css/highlight.css">
+  
+  <script src="./js/jquery-2.1.1.min.js"></script>
+  <script src="./js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="./js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> OVITO用户手册中文翻译</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href=".">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">参考</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="参考/动画设置对话框/">动画设置对话框</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="参考/粒子检测实用工具/">粒子检测实用工具</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">修正器</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/Python脚本修改器/">Python脚本修改器</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/中心对称参数/">中心对称参数</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/仿射变换/">仿射变换</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/位移矢量/">位移矢量</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/位错（DXA）分析/">位错（DXA）分析</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/修正器/">修正器</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/储存与减少/">储存与减少</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/冻结性质/">冻结性质</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/分配颜色/">分配颜色</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/切片/">切片</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/创建化学键/">创建化学键</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/创建等值面/">创建等值面</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/删除所选粒子/">删除所选粒子</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/加载轨道/">加载轨道</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/反选/">反选</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/在周期性边界环绕/">在周期性边界环绕</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/坐标分析/">坐标分析</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/坐标多面体/">坐标多面体</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/多面体模板匹配/">多面体模板匹配</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/展开选择/">展开选择</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/弹性应变计算/">弹性应变计算</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/手动选择/">手动选择</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/散点图/">散点图</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/显示周期性图像/">显示周期性图像</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/构造网格表面/">构造网格表面</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/泰森多边形拓扑分析/">泰森多边形拓扑分析</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/泰森多边形法分析/">泰森多边形法分析</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/清空选项/">清空选项</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/环境光屏蔽/">环境光屏蔽</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/直方图/">直方图</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/维格纳-赛兹缺陷分析/">维格纳 赛兹缺陷分析</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/联结粒子设置/">联结粒子设置</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/聚类分析/">聚类分析</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/表达式选择/">表达式选择</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/计算属性/">计算属性</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/计算键长/">计算键长</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/识别钻石结构/">识别钻石结构</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/选择粒子种类/">选择粒子种类</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/通用临近分析/">通用临近分析</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/键角分析/">键角分析</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/修正器/颜色编码/">颜色编码</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">显示对象</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/显示对象/向量显示/">向量显示</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/显示对象/粒子显示/">粒子显示</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/显示对象/表面网格显示/">表面网格显示</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/显示对象/键显示/">键显示</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">渲染</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/渲染/OpenGL渲染器/">OpenGL渲染器</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/渲染/POV-Ray渲染器/">POV Ray渲染器</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/渲染/Tachyon渲染器/">Tachyon渲染器</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/渲染/渲染设置/">渲染设置</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">视角</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/视角/视角叠加/">视角叠加</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="参考/视角/调整视角对话框/">调整视角对话框</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">开发者信息</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="开发者信息/在Linux上构建OVITO/">在Linux上构建OVITO</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="开发者信息/在MacOS上构建OVITO/">在MacOS上构建OVITO</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="开发者信息/在Windows上构建OVITO/">在Windows上构建OVITO</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">操作指南</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="操作指南/半透明粒子/">半透明粒子</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="操作指南/可视化粒子轨迹/">可视化粒子轨迹</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="操作指南/标记原子的可视化操作/">标记原子的可视化操作</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="操作指南/视角上添加缩放栏/">视角上添加缩放栏</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="操作指南/非球形粒子/">非球形粒子</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">用法</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="用法/Python脚本/">Python脚本</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="用法/修正通道/">修正通道</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="用法/动画系统/">动画系统</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="用法/导入数据/">导入数据</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="用法/导出数据/">导出数据</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="用法/杂项/">杂项</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="用法/渲染图像及视频/">渲染图像及视频</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="用法/粒子属性/">粒子属性</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="用法/视角/">视角</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">OVITO用户手册中文翻译</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+    
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+
+  <h1 id="search">Search Results</h1>
+
+  <form id="content_search" action="search.html">
+    <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+    <input name="q" id="mkdocs-search-query" type="text" class="search_input search-query ui-autocomplete-input" placeholder="Search the Docs" autocomplete="off" autofocus>
+  </form>
+
+  <div id="mkdocs-search-results" class="search-results">
+    Searching...
+  </div>
+
+
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="./js/theme.js"></script>
+      <script src="./search/require.js"></script>
+      <script src="./search/search.js"></script>
+
+</body>
+</html>
